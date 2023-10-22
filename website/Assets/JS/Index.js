@@ -12,5 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const content = document.querySelector(".content");
         content.style.display = "block";
         content.style.opacity = 1;
-    }, 5000); // 5000 milliseconds (5 seconds)
+    }, 2500); // 5000 milliseconds (5 seconds)
 });
+
+

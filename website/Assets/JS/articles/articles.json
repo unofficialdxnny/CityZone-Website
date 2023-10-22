@@ -1,0 +1,12 @@
+{
+    "articles": [
+        {
+            "title": "Article 1",
+            "url": "articles/article1.html"
+        },
+        {
+            "title": "Article 2",
+            "url": "articles/article2.html"
+        },
+    ]
+}
