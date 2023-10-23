@@ -36,8 +36,23 @@ body {
 }
 
 
-/* Navbar */
+/* top section */
+
+.social {
+  width: 100%;
+  background-color: #1e2133;
+  height: 40px;
+  border-bottom: 2px solid #6bade1;
+  background-image: linear-gradient(90deg, #6CABDD, #1C2C5B, #FFC659, #D4A12A, #EC3325, #6CABDD);
+
+}
 
 
-  /*# sourceMappingURL=navbar.css.map */
-  
+
+@media screen and (max-width: 749px) {
+  #social {
+    display: none;
+  }
+
+
+}
