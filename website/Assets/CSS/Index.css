@@ -11,7 +11,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     background-color: #6bade1;
     font-family: 'Days One', sans-serif;
 }
@@ -73,6 +73,10 @@ body {
 
 }
 
+
+::-webkit-scrollbar {
+  width: 0px;
+}
 
 
 
@@ -178,3 +182,106 @@ input[type="checkbox"]{
 
 
 
+/* top section */
+
+
+.main {
+  background-image: url('./Main.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.main-content {
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 36px;
+  margin-bottom: 1px;
+  color: white;
+}
+
+.main-content #collet {
+  color: cyan;
+}
+
+
+
+
+.main-content p {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: white;
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,  
+  -1px 1px 0 #000,  
+  1px 1px 0 #000; /* Add a black outline with -1px and 1px offsets */
+}
+
+
+/* discover now button */
+
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: .5s ease;
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,  
+  -1px 1px 0 #000,  
+  1px 1px 0 #000; /* Add a black outline with -1px and 1px offsets */
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #6bade1;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  color: #6bade1;
+  transition-delay: .5s;
+  text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,  
+    -1px 1px 0 #000,  
+    1px 1px 0 #000; /* Add a black outline with -1px and 1px offsets */
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #6bade1;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
