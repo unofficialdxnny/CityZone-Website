@@ -84,12 +84,12 @@ body {
 
 nav{
   display: flex;
-  height: 80px;
+  height: 50px;
   width: 100%;
   background: #1b1b1b;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px 0 100px;
+  padding: 0 10px 0 100px;
   flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.5); /* Transparent white background */
     backdrop-filter: blur(10px); /* Apply a 10px blur effect */
@@ -105,12 +105,12 @@ nav ul{
   list-style: none;
 }
 nav ul li{
-  margin: 0 5px;
+  margin: 0 0px;
 }
 nav ul li a{
   color: #f2f2f2;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 500;
   padding: 8px 15px;
   border-radius: 5px;
