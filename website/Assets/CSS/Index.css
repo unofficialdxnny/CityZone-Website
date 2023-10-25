@@ -335,3 +335,14 @@ input[type="checkbox"]{
   -1px 1px 0 #000,  
   1px 1px 0 #000; /* Add a black outline with -1px and 1px offsets */
 }
+
+
+
+/* Premier League Table */
+/* 
+@media screen and (max-width: 1021px) {
+  #scoreaxis-widget-bfc28 {
+
+  }
+
+} */
