@@ -352,5 +352,73 @@ input[type="checkbox"]{
 
 #Iframe {
   width: 1000px;
-  height: 550px;
+  height: 600px;
+}
+
+@media screen and (max-width: 375px) {
+  #Iframe {
+    width: 300px;
+    height: 660px; /* Added "px" */
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #Iframe {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #Iframe {
+    width: 325px;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  #Iframe {
+    width: 325px;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  #Iframe {
+    width: 325px;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #Iframe {
+    width: 700px;
+    height: 600px;
+  }
+
+@media screen and (max-width: 912px) {
+  #Iframe {
+    width: 800px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #Iframe {
+    width: 450px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  #Iframe {
+    width: 200px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #Iframe {
+    width: 900px;
+    height: 550px;
+  }
 }
