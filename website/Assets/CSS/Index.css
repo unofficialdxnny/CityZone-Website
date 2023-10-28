@@ -325,17 +325,6 @@ input[type="checkbox"]{
 
 
 
-.about-content p {
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: white;
-  text-shadow: 
-  -1px -1px 0 #000,  
-  1px -1px 0 #000,  
-  -1px 1px 0 #000,  
-  1px 1px 0 #000; /* Add a black outline with -1px and 1px offsets */
-}
-
 
 
 
@@ -352,5 +341,8 @@ input[type="checkbox"]{
 
 #Iframe {
   width: 1000px;
-  height: 600px;
+  height: 460px;
 }
+
+
+
