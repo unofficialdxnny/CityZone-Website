@@ -31,13 +31,14 @@ header {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  margin-right: 10px; /* Increased margin for spacing */
 }
 
 .bar {
   width: 30px;
   height: 3px;
   background-color: #fff;
-  margin: 3px 0;
+  margin: 4px 0; /* Increased margin for spacing */
 }
 
 .menu {
@@ -47,6 +48,7 @@ header {
 
 .menu li {
   margin-right: 20px;
+  font-size: 1.2rem; /* Increased font size */
 }
 
 .menu a {
@@ -64,6 +66,7 @@ header {
       background-color: #333;
       width: 100%;
       text-align: center;
+      padding: 20px 0; /* Increased padding for spacing */
   }
 
   .menu.active {
