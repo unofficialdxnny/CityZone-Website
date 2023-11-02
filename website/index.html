@@ -57,35 +57,42 @@ content="https://cityzone.uk">
     <div class="content" style="display: none;">
         <!-- Your page content goes here -->
         <header>
-            <nav class="navbar">
-                <div class="logo">CityZone</div>
-                <div class="menu-toggle" id="menuToggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <ul class="menu" id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
+            <div id='menu'>
+                <div class='menu-line1'></div>
+                <div class='menu-line2'></div>
+              </div>
+              <div class='nav-page1'>
+                <span>Home</span>
+                <span>About Us</span>
+                <span>News</span>
+                <span>Articles</span>
+                <span>Opinions</span>
+                <span>History</span>
 
-<script>
-    const menuToggle = document.getElementById('menuToggle');
-const menu = document.getElementById('menu');
 
-menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-});
 
-</script>
+              </div>
+              <div class='nav-page2'>
+                <img src="./Assets/Images/IG.png" alt="" srcset="">
+                <img src="./Assets/Images/X.png" alt="" srcset="">
+                
+              </div>
 
-        </main>
+              
+              <script>
+                window.onload=()=>{
+    const $ = document.querySelector.bind(document);
+const $All = document.querySelectorAll.bind(document);
+
+$('#menu').onclick=()=>{              $('#menu').classList.toggle('rotate')
+  $('.nav-page1').classList.toggle('transform')
+  $('.nav-page2').classList.toggle('transform')
+  $('.menu-line1').classList.toggle('rotate1')
+   $('.menu-line2').classList.toggle('rotate2')
+}
+}
+
+              </script>
     </div>
 
 
