@@ -1,123 +1,54 @@
-* {
-  margin: 0;
-}
-
-
 body {
-  background-color: #6bade0;
-}
-/*  navbar */
-
-
-#menu{
-  position: fixed;
-  right: 2rem;
-  top: 2rem;
-  width: 30px;
-  height: 30px;
+  margin: 0;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: .5s;
-  z-index: 100;
+  height: 100vh;
 }
 
-.menu-line1{
+.preloader {
+  width: 100px;
+  height: 100px;
+  background-image: url('https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-master-catalog-MAN/default/dw6a5336a0/images/large/701223769001_pp_01_mcfc.png?sw=1600&sh=1600&sm=fit');
+  background-size: cover;
+  animation: rotate 5s linear infinite;
+}
+
+.ball {
   width: 100%;
-  height: 2px;
-  background: #000000;
-  transition: .6s;
+  height: 100%;
 }
 
-.menu-line2{
-  width: 80%;
-  height: 2px;
-  margin-top: .7rem;
-  background: #000000;
-  transition: .6s;
+.content {
+  display: none;
+  /* Add styles for your content area here */
 }
 
-.rotate{
-  transform: rotateZ(180deg)
-}
-.rotate1{
-  background: #212121;
-  transform: rotateZ(45deg);
-}
-.rotate2{
-  background: #212121;
-  width: 100%;
-  transform:  translate(0,-0.8rem) rotateZ(-45deg);
-}
-.nav-page1{
-  position: fixed ;
-  top:0 ;
-  left: 0;
-  background: whitesmoke;
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #212121;
-  transform: translate(0,-100%);
-  transition: .5s;
-}
-.nav-page1 span{
-  padding: 1rem;
+.hidden {
+  display: none;
 }
 
-
-.transform{
-  transform: translate(0,0);
-}
-
-
-
-/* slide animation */
-
-
-.slide-right {
-  animation: slideRight 0.5s ease forwards;
-  transform: translateX(100%);
-}
-
-@keyframes slideRight {
-  from {
-    transform: translateX(100%);
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  to {
-    transform: translateX(0);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-/* Slide in from the left animation */
-.slide-left {
-  animation: slideLeft 0.5s ease forwards;
-  transform: translateX(-100%);
-}
-
-@keyframes slideLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-#fade-in {
-  animation: fadeIn 2s ease forwards;
-  opacity: 0;
-}
-
-@keyframes fadeIn {
-  from {
+/* Hide the preloader and reveal the content */
+@keyframes hidePreloader {
+  0%, 100% {
     opacity: 0;
   }
-  to {
+  50% {
     opacity: 1;
   }
+}
+
+/* Apply the hidePreloader animation after 5 seconds */
+.preloader.active {
+  animation: hidePreloader 1s linear forwards;
 }

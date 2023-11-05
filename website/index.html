@@ -31,198 +31,22 @@ content="https://cityzone.uk">
     <link rel="stylesheet" href="./Assets/CSS/Index.css">
 </head>
 <body>
-    <div class="loader-container">
-        <div class="box">
-            <div class="shadow"></div>
-            <div class="gravity">
-                <div class="ball"></div>
-            </div>
-        </div>
-    </div>
 
-    <script>
-        window.addEventListener('load', function () {
-    // Simulate a 5-second delay
-    setTimeout(function () {
-        // Hide the loader
-        document.querySelector('.loader-container').style.display = 'none';
-        // Show the content
-        document.querySelector('.content').style.display = 'block';
-    }, 2000); // 5000 milliseconds = 5 seconds
-});
-
-    </script>
-
-
-
-    <div class="content" style="display: none;">
-        <!-- Your page content goes here -->
-        <header>
-            <div id='menu'>
-                <div class='menu-line1'></div>
-                <div class='menu-line2'></div>
-              </div>
-              <div class='nav-page1'>
-                <span>Home</span>
-                <span>About Us</span>
-                <span>News</span>
-                <span>Articles</span>
-                <span>Opinions</span>
-                <span>History</span>
-
-
-
-              </div>
-              
-              <div class="hero-section">
-                <div class="hero-content">
-                    <h1 class="slide-right">Welcome to CityZone</h1>
-                    <p class="slide-left">Your #1 go-to for anything related to Manchester City</p>
-                    <a id="fade-in" href="#" class="btn">Get Started</a>
-                    
-                </div>
-
-                
-            </div>
-     
-            <style>
-                .hero-section {
-    background-image: url('https://img.fcbayern.com/image/upload/t_cms-4x3-seo/v1689077135/cms/public/images/fcbayern-com/homepage/Saison-23-24/Audi-Summer-Tour/Gegner/230711-audi-summer-tour-gegner-manchester-city.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-content {
-    text-align: center;
-    color: #fff;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-p {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF5733;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-    z-index: 10;
-}
-
-.btn:hover {
-    background-color: #FF5733;
-}
-            </style>
-
-              
-              <script>
-                window.onload=()=>{
-    const $ = document.querySelector.bind(document);
-const $All = document.querySelectorAll.bind(document);
-
-$('#menu').onclick=()=>{              $('#menu').classList.toggle('rotate')
-  $('.nav-page1').classList.toggle('transform')
-  $('.nav-page2').classList.toggle('transform')
-  $('.menu-line1').classList.toggle('rotate1')
-   $('.menu-line2').classList.toggle('rotate2')
-}
-}
-
-              </script>
-
-
-
-<div class="animation-section">
-    <div class="text left-slide">Text animated from the left</div>
-    <div class="text right-slide">Text animated from the right</div>
+<!-- Preloader this is shown while the page loads its content -->
+  <div class="preloader">
+    <div class="ball"></div>
   </div>
-  
-  <div class="widget-section">
-    <div id="scoreaxis-widget-ec229" class="widget-container">
-      <iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/8?autoHeight=1&amp;inst=ec229" style="width:100%;border:none;transition:all 300ms ease"></iframe>
-    </div>
-    <div class="data-credit">Data provided by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a></div>
+  <div class="content hidden">
+    <!-- Your page content goes here -->
+    <!-- anything that should be seen and is not the preloader will go here ok asim? -->
+
+
+
+
   </div>
 
-  <style>
-    .animation-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-.text {
-  font-size: 24px;
-  padding: 10px;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
-
-.left-slide {
-  animation-name: slideFromLeft;
-}
-
-.right-slide {
-  animation-name: slideFromRight;
-}
-
-@keyframes slideFromLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideFromRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.widget-section {
-  text-align: center;
-  padding: 20px;
-}
-
-.widget-container {
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.15);
-  border-style: solid;
-  border-radius: 8px;
-  padding: 10px;
-  background: rgb(255, 255, 255);
-}
-
-.data-credit {
-  font-size: 12px;
-  font-family: Arial, sans-serif;
-  text-align: left;
-}
-
-  </style>
-    </div>
 
 
-
+<script src="./Assets/JS/Index.js"></script>
 </body>
 </html>
