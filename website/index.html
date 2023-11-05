@@ -23,6 +23,7 @@
 content="https://cityzone.uk">
 
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CityZone | Home</title>
@@ -142,6 +143,83 @@ $('#menu').onclick=()=>{              $('#menu').classList.toggle('rotate')
 }
 
               </script>
+
+
+
+<div class="animation-section">
+    <div class="text left-slide">Text animated from the left</div>
+    <div class="text right-slide">Text animated from the right</div>
+  </div>
+  
+  <div class="widget-section">
+    <div id="scoreaxis-widget-ec229" class="widget-container">
+      <iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/8?autoHeight=1&amp;inst=ec229" style="width:100%;border:none;transition:all 300ms ease"></iframe>
+    </div>
+    <div class="data-credit">Data provided by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a></div>
+  </div>
+
+  <style>
+    .animation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.text {
+  font-size: 24px;
+  padding: 10px;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.left-slide {
+  animation-name: slideFromLeft;
+}
+
+.right-slide {
+  animation-name: slideFromRight;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.widget-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.widget-container {
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-style: solid;
+  border-radius: 8px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+}
+
+.data-credit {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+  </style>
     </div>
 
 

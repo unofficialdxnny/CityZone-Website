@@ -1,3 +1,5 @@
+// preloader
+
 document.addEventListener("DOMContentLoaded", function () {
     // Simulate a delay (5 seconds in this case)
     setTimeout(function () {
