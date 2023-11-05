@@ -42,3 +42,35 @@ window.addEventListener("DOMContentLoaded", function () {
     updateIframeWidth();
     window.addEventListener("resize", updateIframeWidth);
   });
+
+
+
+// Element Animation Section
+
+
+function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to add animations when elements are in the viewport
+function addAnimationsOnScroll() {
+    const elements = document.querySelectorAll('.slide-right, .fade-in');
+    
+    elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.classList.add('play-animation');
+        }
+    });
+}
+
+// Add a scroll event listener to trigger animations on scroll
+window.addEventListener('scroll', addAnimationsOnScroll);
+
+// Initial check in case some elements are already in the viewport
+addAnimationsOnScroll();

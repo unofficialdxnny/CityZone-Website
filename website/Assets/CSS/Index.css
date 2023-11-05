@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: .5s;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu-line1{
@@ -72,4 +72,52 @@ body {
 
 .transform{
   transform: translate(0,0);
+}
+
+
+
+/* slide animation */
+
+
+.slide-right {
+  animation: slideRight 0.5s ease forwards;
+  transform: translateX(100%);
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from the left animation */
+.slide-left {
+  animation: slideLeft 0.5s ease forwards;
+  transform: translateX(-100%);
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#fade-in {
+  animation: fadeIn 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
