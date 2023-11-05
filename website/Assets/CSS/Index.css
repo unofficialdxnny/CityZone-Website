@@ -1,5 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -335,3 +338,186 @@ img {
   }
 }
 
+
+
+
+/* score axis fade-in */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Second Section */
+.second {
+  background-image: linear-gradient(#4a4a48, #6ebbf1);
+  height: 100vh;
+  display: flex;
+  background-position: center;
+  justify-content: space-between; /* Use space-between to push text to the left and image to the right */
+  align-items: center;
+  text-align: left; /* Align text to the left */
+  padding: 0 20px; /* Add s
+    display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Vertically align content in the middle */
+  align-items: center; /* Horizontally align content in the middle */
+  text-align: left;
+  padding: 0 20px;ome padding to the sides */
+}
+
+.second-content {
+  text-align: left; /* Align text to the left */
+  color: white;
+  flex: 1; /* Allow the text to take up available space */
+  max-width: 50%; /* Limit text width so it doesn't go too far */
+}
+
+.second-content h1 {
+  font-size: 24px;
+}
+
+.second-content p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.second-content a {
+  text-decoration: none;
+}
+
+.second-content button {
+  background-color: #0077FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.image-container {
+  flex: 1; /* Allow the image to take up available space */
+  text-align: right; /* Align the image to the right */
+  padding: 0 20px; /* Add some padding to the sides */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+}
+
+
+/* twitter feed */
+
+.twitter-feed {
+  background-color: #f5f5f5;
+  padding: 100px;
+  background-image: url(https://i.pinimg.com/originals/78/78/63/787863a56b90d5f42791890a53b368d7.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 40px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}

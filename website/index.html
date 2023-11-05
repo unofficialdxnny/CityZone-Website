@@ -31,14 +31,14 @@ content="https://cityzone.uk">
     <link rel="stylesheet" href="./Assets/CSS/Index.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
    <!--=============== HEADER ===============-->
    <header class="header" id="header">
     <nav class="nav container">
-        <a href="#" class="nav__logo">CityZone</a>
+        <a href="index.html" class="nav__logo">CityZone</a>
 
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
@@ -80,21 +80,34 @@ content="https://cityzone.uk">
             </ul>
         </div>
 
-        <img src="assets/img/perfil.png" alt="" class="nav__img">
     </nav>
 </header>
 
 
 
-    <section class="main">
-      <div class="main-content">
-          <h1 id="slide-right">Welcome to Our Website</h1>
-          <p id="slide-left">Your go-to place for all things amazing!</p>
-          <a id="fade-in" href="#"><button>Discover</button></a>
-      </div>
-  </section>
+  
 
-  <div id="scoreaxis-widget-9b438" style="
+  <section id="home" class="main">
+    <div class="main-content">
+        <h1 id="slide-right">Welcome to Our Website</h1>
+        <p id="slide-left">Your go-to place for all things amazing!</p>
+        <a id="fade-in" href="#about"><button>ABOUT US</button></a>
+    </div>
+</section>
+
+<section id="about" class="second">
+  <div class="second-content">
+    <p>AboutUs</p>
+    <h1 id="slide-right">This Is CityZone</h1>
+    <p id="slide-left">Welcome to CityZone – your premier source for all things Manchester City. We’re here to bring you the latest news, in-depth stats, memorable quotes, and a whole lot more about the world's favorite football club. Join us in celebrating the passion and glory of Manchester City!</p>
+    <div class="image-container">
+      <img src="https://www.mancity.com/meta/media/ctjign0g/23ss_pr_ts_football_manchester-city_chinese-new-year_haaland_2061_16x9_1920x1080px.jpg?width=976" alt="CityZone Image">
+    </div>
+  </div>
+</section>
+
+
+  <div class="scoreaxis-widget-9b438 fade-in-element" style="
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.15);
     border-style: solid;
@@ -112,7 +125,7 @@ content="https://cityzone.uk">
         window.addEventListener("DOMContentLoaded", event => {
             window.addEventListener("message", event => {
                 if (event.data.appHeight && "9b438" == event.data.inst) {
-                    let container = document.querySelector("#scoreaxis-widget-9b438 iframe");
+                    let container = document.querySelector(".scoreaxis-widget-9b438 iframe");
                     container && (container.style.height = parseInt(event.data.appHeight) + "px");
                 }
             }, !1);
@@ -128,8 +141,51 @@ content="https://cityzone.uk">
 <br><br><br>
 
 
+<!-- twitter feed -->
 
 
+<section class="twitter-feed">
+  <a class="twitter-timeline" data-lang="en" data-width="700" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/City_Zone_?ref_src=twsrc%5Etfw">Tweets by City_Zone_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></section>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script>
+  // Trigger widget render after the script is loaded
+  twttr.widgets.load();
+</script>
+
+
+<footer class="footer">
+  <div class="container row">
+    <div class="footer-col">
+      <h4>CityZone</h4>
+      <ul>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">Contact</a></li>
+        
+      </ul>
+    </div>
+   
+    <!-- <div class="footer-col">
+      <h4>online shop</h4>
+      <ul>
+        <li><a href="#">download</a></li>
+        <li><a href="#">changelog</a></li>
+        <li><a href="#">github</a></li>
+        <li><a href="#">all version</a></li>
+      </ul>
+    </div> -->
+    <div class="footer-col">
+      <h4>follow us</h4>
+      <div class="social-links">
+       
+        <a href="https://twitter.com/City_Zone_"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/_cityzone/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 <script src="./Assets/JS/Index.js"></script>
