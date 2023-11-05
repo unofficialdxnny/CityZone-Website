@@ -42,8 +42,15 @@
 
 body {
   font-family: 'Roboto Slab', serif;
+  overflow: auto;
+
 }
 
+/* make scrollbars transparent */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
 
 
 /* Main Section */
