@@ -29,24 +29,76 @@ content="https://cityzone.uk">
     <title>CityZone | Home</title>
     <link rel="stylesheet" href="./Assets/CSS/loader.css">
     <link rel="stylesheet" href="./Assets/CSS/Index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
 </head>
 <body>
 
-<!-- Preloader this is shown while the page loads its content -->
-  <div class="preloader">
-    <div class="ball"></div>
-  </div>
-  <div class="content hidden">
-    <!-- Your page content goes here -->
-    <!-- anything that should be seen and is not the preloader will go here ok asim? -->
+   <!--=============== HEADER ===============-->
+   <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">CityZone</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class='bx bx-home-alt nav__icon'></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+                </li>
+                
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class='bx bx-user nav__icon'></i>
+                        <span class="nav__name">About</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class='bx bx-book-alt nav__icon'></i>
+                        <span class="nav__name">Analysis</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class='bx bx-briefcase-alt nav__icon'></i>
+                        <span class="nav__name">Opinion</span>
+                    </a>
+                </li>
+
+
+                <li class="nav__item">
+                    <a href="#contactme" class="nav__link">
+                        <i class='bx bx-message-square-detail nav__icon'></i>
+                        <span class="nav__name">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <img src="assets/img/perfil.png" alt="" class="nav__img">
+    </nav>
+</header>
 
 
 
+    <section class="main">
+      <div class="main-content">
+          <h1 id="slide-right">Welcome to Our Website</h1>
+          <p id="slide-left">Your go-to place for all things amazing!</p>
+          <a id="fade-in" href="#"><button>Discover</button></a>
+      </div>
+  </section>
 
-  </div>
+
 
 
 
 <script src="./Assets/JS/Index.js"></script>
 </body>
 </html>
+
