@@ -46,6 +46,9 @@
 body {
   font-family: 'Roboto Slab', serif;
   overflow: auto;
+  background-image: url('https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt7a8bd7c4add81681/651461a367fc9f66e04b2664/Power_Rank_Man_City_(1).jpg?auto=webp&format=pjpg&width=3840&quality=60');
+  background-position: center;
+  background-size: cover;
 
 }
 
