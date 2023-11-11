@@ -58,7 +58,7 @@ body {
 
 /* Main Section */
 .main {
-  background-image: url('https://images3.alphacoders.com/117/1172767.png');
+  background-image: url('./bg\ articles.png');
   height: 100vh;
   display: flex;
   background-position: center;
