@@ -524,3 +524,35 @@ ul {
 		width: 100%;
 	}
 }
+
+
+/* Twitter */
+
+
+
+.twitter-section {
+  background-color: #00acee; /* Twitter's brand color */
+  text-align: center;
+  padding: 20px;
+  background-image: url(https://pbs.twimg.com/profile_banners/1463848159831023621/1689979440/600x200);
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+
+.twitter-logo {
+  min-width: 100px;
+  margin-bottom: 10px;
+}
+
+.twitter-timeline-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.twitter-timeline {
+  width: 100%;
+  min-height: 500px; /* Set a minimum height for the timeline */
+}
