@@ -109,6 +109,56 @@ content="https://cityzone.uk">
 </section>
 
 
+
+<!-- A Heading here -->
+
+<div class="wrap">
+    <h1 id="fade-in" class="dotted-shadow" data="City Stats">City Stats</h1>
+  </div>
+  
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+h1.dotted-shadow {
+  font-size: 8em;
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.dotted-shadow:before {
+  content: attr(data);
+  position: absolute;
+  color: #ccc;
+  z-index: -1;
+  overflow: hidden;
+}
+
+h1.dotted-shadow:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Assets/Images/black\ dotted\ shadow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+    h1.dotted-shadow {
+        font-size: 4em;
+    }
+}
+
+  </style>
 <br><br>
 <div class="scoreaxis-widget-9b438 fade-in-element" style="
     border-width: 1px;
@@ -174,11 +224,12 @@ max-width: 1000px; /* Added max-width property */
 <br><br>
 
 <!-- twitter feed -->
-
+<!-- A Heading here -->
+<div class="wrap">
+    <h1 id="fade-in" class="dotted-shadow" data="Twitter Feed">Twitter Feed</h1>
+  </div>
 <div class="twitter-section">
-    <!-- You can replace "twitter-logo.png" with the path to your Twitter logo image -->
 
-    <h1 style="text-align: left; color: white;">Check out our recent <a target="_blank" style="text-decoration: underline; color: white;" href="https://twitter.com/">Tweets</a></h1>
 
     <div class="twitter-timeline-container">
         <a class="twitter-timeline" data-height="500" data-dnt="true" href="https://twitter.com/City_Zone_?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
