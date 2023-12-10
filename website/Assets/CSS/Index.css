@@ -61,7 +61,7 @@ body {
 
 /* Main Section */
 .main {
-  background-image: url('./bg\ articles.png');
+  background-image: url('https://wallpapers.com/images/hd/manchester-city-logo-blue-flag-4ayzcphq2frqd9xb.jpg');
   height: 100vh;
   display: flex;
   background-position: center;
@@ -523,4 +523,58 @@ ul {
 	.footer-col {
 		width: 100%;
 	}
+}
+
+
+/* Twitter */
+
+
+
+.twitter-section {
+  background-color: #00acee; /* Twitter's brand color */
+  text-align: center;
+  padding: 20px;
+  background-image: url(https://pbs.twimg.com/profile_banners/1463848159831023621/1689979440/600x200);
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+
+.twitter-logo {
+  min-width: 100px;
+  margin-bottom: 10px;
+}
+
+.twitter-timeline-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.twitter-timeline {
+  width: 100%;
+  min-height: 500px; /* Set a minimum height for the timeline */
+}
+
+
+
+/* Font sizing for main content text */
+
+.main .main-content h1 {
+  font-size: 75px;
+  color: #000227;
+}
+.main .main-content p {
+  font-size: 25px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .main .main-content h1 {
+    font-size: 75px;
+  }
+  .main .main-content p {
+    font-size: 25px;
+  }
 }

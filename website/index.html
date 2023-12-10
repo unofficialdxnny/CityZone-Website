@@ -38,7 +38,7 @@ content="https://cityzone.uk">
    <!--=============== HEADER ===============-->
    <header class="header" id="header">
     <nav class="nav container">
-        <a href="index.html" class="nav__logo">CityZone</a>
+        <a href="index.html" class="nav__logo" style="color: white;">CityZone</a>
 
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
@@ -89,7 +89,7 @@ content="https://cityzone.uk">
 
   <section id="home" class="main">
     <div class="main-content">
-        <h1 id="slide-right">Welcome to Our Website</h1>
+        <h1 id="slide-right">CityZone</h1>
         <p id="slide-left">Your go-to place for all things amazing!</p>
         <a id="fade-in" href="#about"><button>ABOUT US</button></a>
     </div>
@@ -104,11 +104,145 @@ content="https://cityzone.uk">
       <figure>
         <img src="https://www.mancity.com/meta/media/ctjign0g/23ss_pr_ts_football_manchester-city_chinese-new-year_haaland_2061_16x9_1920x1080px.jpg?width=976" alt="CityZone Image">
         <figcaption>Image from Manchester City</figcaption>
-      </figure>    </div>
+      </figure>  
+      </div>
   </div>
 </section>
 
+<div class="wrap">
+  <h1 id="fade-in" class="dotted-shadow" data="Our Articles">Our Articles</h1>
+</div> 
+<section class="articles">
+  <div class="main-content">
+    <div class="article-container" id="articleContainer">
+      
+      <!-- Article Cards will be dynamically added here -->
+      <div id="articleContainer">
+        
+        <a class="article-card" href="https://cityzone.uk/Articles/1/Rico Lewis Has Burst Onto The Scene In The Last Year And A Half And Helped Manchester City Win The Treble!" target="_blank">
+            <img src="https://cdn.discordapp.com/attachments/1092434952815120515/1172309026973950074/IMG-20231109-WA0042.jpg?ex=655fd8dc&is=654d63dc&hm=c66844bb1e1a1d06d2bb4dbab566bea35f43b0a397862dcb456fea5ee5c7c877&" alt="Article Image">
+            <h3>Rico Lewis Has Burst Onto The Scene In The Last Year And A Half And Helped Manchester City Win The Treble!</h3>
+            <p class="date">Last modified: November 10, 2023</p>
+        </a>
+    </div>
+  </div>
+  
+  </div>
+</section>
 
+<style>
+   /* Updated CSS for centered article cards with hover effect */
+
+
+   .articles {
+    background-image: linear-gradient(#6ebbf1, #6ebbf1);
+   }
+   .article-card {
+            /* Add your styles for the article cards */
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: black;
+            display: block;
+            width: 300px;
+        }
+.article-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.article-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px; /* Adjust width as per your design */
+    transition: transform 0.3s ease-in-out; /* Adding transition */
+    background: white;
+}
+
+.article-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.article-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.article-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.article-card .date {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Hover effect */
+.article-card:hover {
+    transform: scale(1.05); /* Adjust the scale as desired */
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+</style>
+<!-- A Heading here -->
+
+<div class="wrap">
+    <h1 id="fade-in" class="dotted-shadow" data="City Stats">City Stats</h1>
+  </div>
+  
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+h1.dotted-shadow {
+  font-size: 8em;
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.dotted-shadow:before {
+  content: attr(data);
+  position: absolute;
+  color: #ccc;
+  z-index: -1;
+  overflow: hidden;
+}
+
+h1.dotted-shadow:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(./Assets/Images/black\ dotted\ shadow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+    h1.dotted-shadow {
+        font-size: 4em;
+    }
+}
+
+  </style>
 <br><br>
 <div class="scoreaxis-widget-9b438 fade-in-element" style="
     border-width: 1px;
@@ -157,6 +291,7 @@ background:rgb(255, 255, 255);
 width:100%;
 max-width: 1000px; /* Added max-width property */
     margin: 0 auto; /* Center the element */">
+
     <iframe id="Iframe" src="https://www.scoreaxis.com/widget/live-match/18842386?autoHeight=1&amp;lineupsTab=0&amp;eventsTab=0&amp;statsTab=0&amp;inst=68f4d" style="width:100%;border:none;transition:all 300ms ease"></iframe>
     <script>
         window.addEventListener("DOMContentLoaded", event => {
@@ -173,10 +308,20 @@ max-width: 1000px; /* Added max-width property */
 <br><br>
 
 <!-- twitter feed -->
+<!-- A Heading here -->
+<div class="wrap">
+    <h1 id="fade-in" class="dotted-shadow" data="Twitter Feed">Twitter Feed</h1>
+  </div>
+<div class="twitter-section">
 
 
+    <div class="twitter-timeline-container">
+        <a class="twitter-timeline" data-height="500" data-dnt="true" href="https://twitter.com/City_Zone_?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
 
-
+    
 
 <footer class="footer">
   <div class="container row">
