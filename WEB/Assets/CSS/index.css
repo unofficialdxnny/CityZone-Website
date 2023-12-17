@@ -6,40 +6,67 @@
 
 
 .main {
-    /* background-image: url('../Images/Main_Section_BG-min.png'); */
-    background: url(../Images/Website\ bg\ main.png);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: url('https://legendary-pixie-aef88c.netlify.app/assets/images/website%20bg%20main.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content {
-    text-align: center;
+  text-align: center;
+  color: white;
 }
 
 .main-content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2c3948;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .main-content #num {
-    color: red;
+  color: red;
 }
 
 #num {
-    color: red;
+  color: red;
 }
 
 .main-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #2c3948;
+  flex: 1; /* Each card takes equal width */
+  max-width: 300px; /* Set a maximum width for each card */
+  color: white;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
 /* hide  scrollbars */
 
 ::-webkit-scrollbar {
@@ -61,7 +88,7 @@
   /* Style the Twitter timeline container */
   .twitter-timeline-container {
     max-width: 700px;
-    transform: rotateX(30deg); /* Adjust the rotation for the 3D effect */
+     /* Adjust the rotation for the 3D effect */
     transform-origin: center bottom; /* Adjust the rotation origin */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
   }
