@@ -8,7 +8,7 @@
 <meta name="description" content="CityZone your #1 go to for anything related to Manchester City">
 <meta name="twitter:image:src" content="https://i.imgur.com/xVydRF1.png">
 <meta name="twitter:image:src" content="https://i.imgur.com/xVydRF1.png">
-<meta name="twitter:site" content="@unofficialdxnny">
+<meta name="twitter:site" content="@CityZone">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="CityZone">
 <meta name="twitter:description" content="CityZone your #1 go to for anything related to Manchester City">
@@ -16,7 +16,7 @@
 <meta property="og:image:alt" content="CityZone your #1 go to for anything related to Manchester City">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="600">
-<meta property="og:site_name" content="unofficialdxnny">
+<meta property="og:site_name" content="CityZone">
 <meta property="og:type" content="object">
 <meta property="og:title" content="CityZone">
 <meta property="og:url" content="https://cityzone.netlify.app">
@@ -32,7 +32,7 @@ content="https://cityzone.netlify.app/">
     <link rel="stylesheet" href="./Assets/CSS/navbar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="./Assets/CSS/footer.css">
+    <link rel="stylesheet" href="./Assets/CSS/footerarticles.css">
     <link rel="stylesheet" href="./Assets/CSS/login.css">
     <link rel="stylesheet" href="./Assets/CSS/index.css">
 <style>
@@ -133,7 +133,9 @@ content="https://cityzone.netlify.app/">
 
 <section class="twitter-section" id="twitter-section">
   <div class="twitter-timeline-container" id="twitter-timeline-container">
-    <a class="twitter-timeline" data-lang="en" data-width="700" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/City_Zone_?ref_src=twsrc%5Etfw">Tweets by City_Zone_</a>
+    <h2 class="widget-heading">Twitter Feed</h2>
+
+    <a class="twitter-timeline" data-lang="en" data-width="1000" data-height="1300" data-dnt="true" data-theme="dark" href="https://twitter.com/City_Zone_?ref_src=twsrc%5Etfw">Tweets by City_Zone_</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 </section>
@@ -141,7 +143,7 @@ content="https://cityzone.netlify.app/">
 <!-- Scoreaxis Data -->
 
 <section class="scoreaxis">
-  <h2 class="widget-heading">Standings Widget</h2>
+  <h2 class="widget-heading">City Stats</h2>
 
   <div class="scoreaxis-widget scoreaxis-widget-9b438 fade-in-element">
     <iframe id="Iframe1" src="https://www.scoreaxis.com/widget/standings-widget/8?autoHeight=1&amp;inst=9b438" style="width: 100%; border: none; transition: all 300ms ease;"></iframe>
@@ -160,7 +162,7 @@ content="https://cityzone.netlify.app/">
   <br><br><br>
 
   <div class="scoreaxis-widget" id="scoreaxis-widget-68f4d">
-    <iframe id="Iframe2" src="https://www.scoreaxis.com/widget/live-match/18842386?autoHeight=1&amp;lineupsTab=0&amp;eventsTab=0&amp;statsTab=0&amp;inst=68f4d" style="width: 100%; border: none; transition: all 300ms ease;"></iframe>
+    <iframe id="Iframe2" src="https://www.scoreaxis.com/widget/live-match/18842386?autoHeight=1&amp;lineupsTab=0&amp;eventsTab=0&amp;statsTab=0&amp;inst=68f4d" style="width: 100%; border: none; transition: all 300ms ease; scrollbar-width: 0px;"></iframe>
     <script>
       window.addEventListener("DOMContentLoaded", event => {
         window.addEventListener("message", event => {
@@ -213,6 +215,8 @@ content="https://cityzone.netlify.app/">
       <script src="./Assets/JS/login.js"></script>
       <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
       <script src="./Assets/JS/scoreaxis.js"></script>
+      <script src="./Assets/JS/scroll.js"></script>
+      <script src="./Assets/JS/twitter.js"></script>
 
     </body>
 </html>

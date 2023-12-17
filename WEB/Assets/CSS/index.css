@@ -55,6 +55,7 @@
     align-items: center;
     height: 75vh;
     perspective: 800px; /* Adjust the perspective for the 3D effect */
+    background-color: black;
   }
 
   /* Style the Twitter timeline container */
@@ -107,6 +108,15 @@
     transform: translateY(20px); /* Initially move the heading down */
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
+
+  .widget-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3948;
+    opacity: 0; /* Initially hide the heading */
+    transform: translateY(20px); /* Initially move the heading down */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
   
   
   /* Scroll-based animations for widget headings */
@@ -120,9 +130,35 @@
       transform: translateY(0);
     }
   }
+
   
-  .scoreaxis .widget-heading,
-  .twitter-section .widget-heading {
-    animation: fadeInUp 0.5s ease 0.5s forwards; /* Delay the animation for 0.5 seconds after the section enters the viewport */
+
+  .twitter-section,
+.scoreaxis {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.twitter-section.active,
+.scoreaxis.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Add this CSS for the scroll-based animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.twitter-section .widget-heading,
+.scoreaxis .widget-heading {
+  animation: fadeInUp 0.5s ease 0.5s forwards; /* Delay the animation for 0.5 seconds after the section enters the viewport */
+}
