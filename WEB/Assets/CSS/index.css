@@ -82,7 +82,7 @@
     align-items: center;
     height: 75vh;
     perspective: 800px; /* Adjust the perspective for the 3D effect */
-    background-color: black;
+    background-color: ;
   }
 
   /* Style the Twitter timeline container */
@@ -90,7 +90,7 @@
     max-width: 700px;
      /* Adjust the rotation for the 3D effect */
     transform-origin: center bottom; /* Adjust the rotation origin */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 1); /* Optional: Add a shadow for depth */
   }
 
   /* Style the Twitter timeline */
@@ -188,4 +188,8 @@
 .twitter-section .widget-heading,
 .scoreaxis .widget-heading {
   animation: fadeInUp 0.5s ease 0.5s forwards; /* Delay the animation for 0.5 seconds after the section enters the viewport */
+}
+
+a {
+  text-decoration: none;
 }
