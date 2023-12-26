@@ -119,7 +119,7 @@ content="https://cityzone.netlify.app/">
     </div>
 
 <!-- main section -->
-<section class="main">
+<section id="main" class="main">
   <div class="main-content">
     <h1>CityZone</h1>
     <p>Your #1 go-to for anything related to Manchester City</p>
@@ -127,6 +127,17 @@ content="https://cityzone.netlify.app/">
   </div>
   
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the device width
+    var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    // Set the width of the section
+    var section = document.getElementById("main"); // Replace with the actual ID of your section
+    section.style.width = deviceWidth + "px";
+});
+</script>
 
 <!-- Cards will be loaded dynamically  -->
 <!-- Check maincards.js -->
@@ -151,7 +162,7 @@ content="https://cityzone.netlify.app/">
   <div class="twitter-timeline-container" id="twitter-timeline-container">
     <h2 class="widget-heading">Twitter Feed</h2>
 
-    <a class="twitter-timeline" data-lang="en" data-width="1000" data-height="1300" data-dnt="true" data-theme="dark" href="https://twitter.com/City_Zone_?ref_src=twsrc%5Etfw?123"></a>
+    <a class="twitter-timeline" data-lang="en" data-width="700" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/City_Zone_?ref_src=twsrc%5Etfw?123"></a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 </section>
